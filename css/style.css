@@ -1,0 +1,640 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/**----RESET----**/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/**----ALL-PAGES----**/
+
+body {
+    font-family: "Lato", sans-serif;
+    background-color: black;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 100%;
+    min-height: 100vh
+}
+
+main {
+    color: whitesmoke;
+    background-color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+/**----HEADER----**/
+
+.navbar, header, footer {
+    background: rgba(215, 223, 222, 1.0);
+    background: linear-gradient(0deg, rgba(215, 223, 222, 1.0), rgba(85, 87, 86, 1.0));
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+header .navbar .container-fluid .navbar-brand .nav-footer-logo {
+    padding: 10px;
+    margin-right: 50px;
+}
+
+header .navbar .container-fluid .navbar-collapse .navbar-nav a {
+    color: white;
+    border: 1px solid white;
+    background-color: black;
+    padding: 3px 7px 3px 7px;
+    margin-right: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/**----HOME----**/
+
+.hero {
+    width: 100%;
+    height: calc(100vh - 113px);
+    background-image: url(../img/hero-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.hero-subtitle {
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    background-color: black;
+    padding: 10px;
+    margin: 10px 10px 20px 10px;
+    border-radius: 5px;
+}
+
+.hero .hero-subtitle p {
+    font-size: 18px;
+    margin: 10px;
+}
+
+.nuestra-empresa {
+    display: flex;
+    justify-content: center;
+    margin: 70px
+}
+
+.nuestra-empresa div {
+    background-color: whitesmoke;
+    color: black;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px 0 0 5px;
+}
+
+.nuestra-empresa div h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.nuestra-empresa img {
+    border-radius: 0 5px 5px 0;
+}
+
+.historia {
+    display: flex;
+    justify-content: center;
+    margin: 70px;;
+}
+
+.historia img {
+    border-radius: 5px 0 0 5px;
+    background-color: whitesmoke;
+    padding: 10px;
+}
+
+.historia div {
+    background-color: whitesmoke;
+    color: black;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 5px 5px 0;
+}
+
+.nuestra-empresa div h2, .historia div h2, .m-v-v div h2 {
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.nuestra-empresa div p, .historia div p, .m-v-v div p, .valores {
+    font-size: 18px;
+    padding: 0 25px;
+}
+
+.mision, .vision, .valores {
+    background-color: whitesmoke;
+    color: black;
+    width: 75%;
+    margin: 25px;
+    padding: 25px;
+    border-radius: 5px;
+    border-top: 25px solid gray
+}
+
+.mision h2, .vision h2, .valores h2 {
+    text-align: center;
+}
+
+.m-v-v {
+    display: flex;
+    padding: 25px;
+    margin: 20px;
+}
+
+.valores ul li {
+    list-style: none;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+/**----SECCION-COMBUSTIBLES----**/
+
+.nuestros-combustibles h2 {
+    font-size: 60px;
+    padding: 25px;
+}
+
+.fuel-cards {
+    width: 280px;
+    height: 400px;
+    border: 2px solid whitesmoke;
+    text-align: center;
+    display: inline-block;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.fuel-cards img {
+    width: 100%;
+}
+
+.fuel-cards h3 {
+    margin-top: 30px;
+}
+
+.fuel-types {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.fuel-description {
+    background-color: whitesmoke;
+    color: black;
+    margin: 70px;
+    border-radius: 5px;
+}
+
+.fuel-description h3 {
+    font-size: 60px;
+    padding: 30px 30px 3px 30px;
+    color: whitesmoke;
+	-webkit-text-stroke: 1px #F8F8F8;
+	text-shadow: 0px 2px 4px black;
+    border-radius: 5px 5px 0 0 ;
+}
+
+.fuel-description p {
+    margin-bottom: 0;
+}
+
+#nafta-super {
+    background-image: url(../img/nafta-super.png);
+    background-size: cover;
+    background-position:bottom;
+}
+
+#nafta-premium {
+    background-image: url(../img/nafta-premium.png);
+    background-size: cover;
+    background-position:bottom;
+}
+
+#diesel {
+    background-image: url(../img/diesel-comun.png);
+    background-size: cover;
+    background-position:bottom;
+}
+
+#diesel-premium {
+    background-image: url(../img/diesel-premium.png);
+    background-size: cover;
+    background-position:bottom;
+}
+
+.fuel-description p {
+    padding: 30px;
+}
+
+.fuel-types a:link, :visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+.fuel-types h3 {
+    font-size: 30px;
+}
+
+.fuel-description p {
+    font-size: 18px;
+}
+
+/**----SECCION-ACCESORIOS----**/
+
+.accesorios h2 {
+    font-size: 60px;
+    padding: 25px;
+    margin: 10px;
+}
+
+.accesorios p {
+    font-size: 18px;
+    padding: 25px;
+    text-align: center;
+    margin: 10px;
+}
+
+.accesorios p span {
+    font-weight: bold;
+}
+
+.grid-container {
+    width: 90%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 1rem;
+    row-gap: 1rem;
+}
+
+.grid-item {
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.grid-item a img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.f {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+} 
+
+.c {
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+}
+
+.a {
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+} 
+
+.e {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    display: flex;
+    align-items: center;
+}
+
+.b {
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+} 
+
+/**----SECCION-SERVICIOS----**/
+
+.reparto-agro, .service-vehicular {
+    display: flex;
+    padding: 25px;
+    margin: 70px;
+}
+
+.reparto-agro div, .service-vehicular div {
+    padding: 25px;
+    background-color: whitesmoke;
+    color: black;
+}
+
+.reparto-agro img {
+    border-radius: 5px 0 0 5px;
+}
+
+.reparto-agro div {
+    border-radius: 0 5px 5px 0;
+}
+
+.service-vehicular div {
+    border-radius: 5px 0 0 5px;
+}
+
+.service-vehicular img {
+    border-radius: 0 5px 5px 0;
+}
+
+.reparto-agro div h2, .service-vehicular div h2 {
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.reparto-agro p, .service-vehicular p {
+    font-size: 18px;
+}
+
+/**----SECCION-CONTACTO----**/
+
+.formulario h2 {
+    font-size: 60px;
+    padding: 25px;
+    margin: 10px;
+}
+
+.formulario p {
+    font-size: 18px;
+    padding: 25px;
+    margin: 10px;
+}
+
+.formulario p span {
+    font-weight: bold;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    margin: 30px auto 50px auto;
+}
+
+.form-boot {
+    border: 2px solid whitesmoke;
+    padding: 20px;
+    border-radius: 5px;
+    height: 450px;
+    width: 600px;
+}
+
+.input-group {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container .form-boot .input-group span, button.btn.btn-secondary.btn-lg {
+    background-color: rgb(214, 214, 214);
+    color: black;
+}
+
+button.btn.btn-outline-secondary {
+    font-size: 18px;
+}
+
+/**----FOOTER----**/
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    color: black;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+footer .footer-map, footer .social-media-copyright  {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    margin: 10px 10px;
+}
+
+.footer-map a img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.social-media-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.social-media-icons a img {
+    width: 40px;
+    height: 40px;
+    margin: 0 0 10px 10px;
+}
+
+.social-media-copyright p {
+    margin-right: 15px;
+}
+
+/**----MEDIA-QUERIES----**/
+
+@media screen and (max-width: 1355px) {
+    /**----MQ-HOME----**/
+    .historia {
+        flex-direction: column-reverse;
+    }
+    .historia img {
+        border-radius: 0 0 5px 5px;
+    }
+    .historia div {
+        border-radius:5px 5px 0 0 ;
+    }
+    /**----MQ-SERVICIOS----**/
+    .reparto-agro, .service-vehicular {
+        flex-direction: column;
+    }
+    .reparto-agro img {
+        border-radius: 5px 5px 0 0;
+    }
+    .reparto-agro div {
+        border-radius: 0 0 5px 5px;
+    }
+    .service-vehicular div {
+        border-radius: 5px 5px 0 0;
+    }
+    .service-vehicular img {
+        border-radius: 0 0 5px 5px;
+    }
+}
+
+@media screen and (max-width: 1088px) {
+    /**----MQ-HOME----**/    
+    .nuestra-empresa {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nuestra-empresa div {
+        border-radius: 5px 5px 0 0;
+        /* width: 600px; */
+    }
+    .nuestra-empresa img {
+        width: 100%;
+        border-radius: 0 0 5px 5px;
+    }
+    .m-v-v {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    /**----MQ-NAV----**/ 
+    .container-fluid {
+    flex-direction: column;
+    }
+    .nav-link {
+    margin: 3px;
+    }
+    .navbar-toggler {
+    margin-bottom: 10px;
+    }
+    header .navbar .container-fluid .navbar-brand .nav-footer-logo {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 744px) {
+    /**----MQ-HOME----**/
+    .hero-subtitle p {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .grid-container {
+        column-gap: 0.2rem;
+        row-gap: 0.2rem;
+    }
+    /**----MQ-FOOTER----**/
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    /**----MQ-SERVICIOS----**/
+    .reparto-agro div h2, .service-vehicular div h2 {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 516px) {
+    /**----MQ-SERVICIOS----**/
+    .reparto-agro, .service-vehicular {
+        margin: 40px;
+    }
+    .reparto-agro div h2, .service-vehicular div h2 {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    /**----MQ-HOME----**/
+    .nuestra-empresa {
+        margin: 40px;
+    }
+    .historia {
+        margin: 40px;
+    }
+    .mision, .vision, .valores {
+        margin: 40px;
+        width: 100%;
+    }
+    .nuestra-empresa div, .historia div, .mision, .vision, .valores ul {
+        padding: 10px;
+    }
+    /**----MQ-COMBUSTIBLES----**/
+    .nuestros-combustibles h2 {
+        font-size: 40px;
+        text-align: center;
+    }
+    .fuel-description {
+        margin: 40px;
+    }
+    .fuel-description h3 {
+        font-size: 40px ;
+    }
+    /**----MQ-ACCESORIOS----**/
+    .accesorios h2 {
+        font-size: 40px;
+        text-align: center;
+    }
+    /**----MQ-SERVICIOS----**/
+    .reparto-agro, .service-vehicular {
+        margin: 20px;
+    }
+    .reparto-agro div, .service-vehicular div {
+        border-radius: 5px;
+    }
+    .reparto-agro img, .service-vehicular img {
+        display: none;
+    }
+    /**----MQ-CONTACTO----**/
+    .formulario h2 {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    /**----MQ-HOME----**/
+    .nuestra-empresa img {
+        display: none;
+    }
+    .nuestra-empresa div {
+        border-radius: 5px;
+    }
+    .nuestra-empresa div h2 {
+        font-size: 40px;
+    }
+    .historia img {
+        display: none;
+    }
+    .historia div {
+        border-radius: 5px;
+    }
+    .historia div h2 {
+        font-size: 40px;
+    }
+    .m-v-v .mision h2, .m-v-v .vision h2, .m-v-v .valores h2 {
+        font-size: 40px;
+    }
+}
