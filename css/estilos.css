@@ -68,7 +68,7 @@ footer, .navbar, header {
   width: 100%;
 }
 
-.nuestros-combustibles div a div h3 {
+.nuestros-combustibles div a div h2 {
   margin-top: 30px;
   font-size: 30px;
 }
@@ -80,7 +80,7 @@ footer, .navbar, header {
   border-radius: 5px;
 }
 
-.fuel-description div h3 {
+.fuel-description div h2 {
   font-size: 60px;
   padding: 30px 30px 3px 30px;
   color: whitesmoke;
@@ -115,7 +115,7 @@ footer, .navbar, header {
 
 .service-vehicular, .reparto-agro {
   display: flex;
-  padding: 25px;
+  padding: 15px;
   margin: 70px;
 }
 
@@ -197,6 +197,12 @@ a {
 
 #diesel-premium {
   background-image: url(../img/diesel-premium.png);
+}
+
+.nuestros-servicios {
+  font-size: 60px;
+  padding: 15px;
+  margin: 10px;
 }
 
 /**----SECCION-CONTACTO----**/
@@ -339,7 +345,7 @@ header .navbar .container-fluid .navbar-collapse .navbar-nav a {
 }
 
 /**----SECCION-COMBUSTIBLES----**/
-.nuestros-combustibles h2 {
+.nuestros-combustibles h1 {
   font-size: 60px;
   padding: 25px;
 }
@@ -350,7 +356,7 @@ header .navbar .container-fluid .navbar-collapse .navbar-nav a {
   flex-wrap: wrap;
 }
 /**----SECCION-ACCESORIOS----**/
-.accesorios h2 {
+.accesorios h1 {
   font-size: 60px;
   padding: 25px;
   margin: 10px;
@@ -415,7 +421,7 @@ header .navbar .container-fluid .navbar-collapse .navbar-nav a {
 }
 
 /**----SECCION-CONTACTO----**/
-.formulario h2 {
+.formulario h1 {
   font-size: 60px;
   padding: 25px;
   margin: 10px;
@@ -524,6 +530,7 @@ footer .social-media-copyright p {
   }
 }
 @media screen and (max-width: 700px) {
+  /**----MQ-ACCESORIOS----**/
   .grid-container {
     column-gap: 0.2rem;
     row-gap: 0.2rem;
@@ -534,6 +541,9 @@ footer .social-media-copyright p {
     align-items: center;
   }
   /**----MQ-SERVICIOS----**/
+  .nuestros-servicios {
+    text-align: center;
+  }
   .reparto-agro div h2, .service-vehicular div h2 {
     text-align: center;
   }
@@ -563,22 +573,26 @@ footer .social-media-copyright p {
     padding: 10px;
   }
   /**----MQ-COMBUSTIBLES----**/
-  .nuestros-combustibles h2 {
+  .nuestros-combustibles h1 {
     font-size: 40px;
     text-align: center;
   }
   .fuel-description div {
     margin: 40px;
   }
-  .fuel-description div h3 {
+  .fuel-description div h2 {
     font-size: 40px;
   }
   /**----MQ-ACCESORIOS----**/
-  .accesorios h2 {
+  .accesorios h1 {
     font-size: 40px;
     text-align: center;
   }
   /**----MQ-SERVICIOS----**/
+  .nuestros-servicios {
+    font-size: 40px;
+    text-align: center;
+  }
   .reparto-agro, .service-vehicular {
     margin: 20px;
   }
@@ -589,7 +603,7 @@ footer .social-media-copyright p {
     display: none;
   }
   /**----MQ-CONTACTO----**/
-  .formulario h2 {
+  .formulario h1 {
     font-size: 40px;
   }
 }

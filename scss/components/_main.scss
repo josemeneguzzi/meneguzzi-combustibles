@@ -111,7 +111,7 @@
 /**----SECCION-COMBUSTIBLES----**/
 
 .nuestros-combustibles {
-    h2 {
+    h1 {
         font-size: nth($tamaño-fuente, 4);
         padding: 25px;
     }
@@ -134,7 +134,7 @@
                 img {
                     @extend %fuel-div-img;
                 }
-                h3 {
+                h2 {
                     @extend %fuel-div-h3;
                 }
             }
@@ -149,7 +149,7 @@
                 img {
                     @extend %fuel-div-img;
                 }
-                h3 {
+                h2 {
                     @extend %fuel-div-h3;
                 }
             }
@@ -164,7 +164,7 @@
                 img {
                     @extend %fuel-div-img;
                 }
-                h3 {
+                h2 {
                     @extend %fuel-div-h3;
                 }
             }
@@ -179,7 +179,7 @@
                 img {
                     @extend %fuel-div-img;
                 }
-                h3 {
+                h2 {
                     @extend %fuel-div-h3;
                 }
             }
@@ -190,7 +190,7 @@
 .fuel-description {
     div {
         @extend %fdescrip-div;
-        h3 {
+        h2 {
             @extend %fdescrip-div-h3;
         }
         p {
@@ -199,7 +199,7 @@
     }
     div {
         @extend %fdescrip-div;
-        h3 {
+        h2 {
             @extend %fdescrip-div-h3;
         }
         p {
@@ -208,7 +208,7 @@
     }
     div {
         @extend %fdescrip-div;
-        h3 {
+        h2 {
             @extend %fdescrip-div-h3;
         }
         p {
@@ -217,7 +217,7 @@
     }
     div {
         @extend %fdescrip-div;
-        h3 {
+        h2 {
             @extend %fdescrip-div-h3;
         }
         p {
@@ -229,7 +229,7 @@
 /**----SECCION-ACCESORIOS----**/
 
 .accesorios {
-    h2 {
+    h1 {
         font-size: nth($tamaño-fuente, 4);
         padding: 25px;
         margin: 10px;
@@ -369,7 +369,7 @@
 /**----SECCION-CONTACTO----**/
 
 .formulario {
-    h2 {
+    h1 {
         font-size: nth($tamaño-fuente, 4);
         padding: 25px;
         margin: 10px;

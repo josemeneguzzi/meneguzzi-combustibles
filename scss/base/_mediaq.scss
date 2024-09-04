@@ -71,6 +71,7 @@
 }
 
 @media screen and (max-width: 700px) {
+    /**----MQ-ACCESORIOS----**/
     .grid-container {
         column-gap: 0.2rem;
         row-gap: 0.2rem;
@@ -81,6 +82,9 @@
         align-items: center;
     }
     /**----MQ-SERVICIOS----**/
+    .nuestros-servicios {
+        text-align: center;
+    }
     .reparto-agro div h2, .service-vehicular div h2 {
         text-align: center;
     }
@@ -112,22 +116,26 @@
         padding: 10px;
     }
     /**----MQ-COMBUSTIBLES----**/
-    .nuestros-combustibles h2 {
+    .nuestros-combustibles h1 {
         font-size: nth($tamaño-fuente, 3);
         text-align: center;
     }
     .fuel-description div {
         margin: 40px;
     }
-    .fuel-description div h3 {
+    .fuel-description div h2 {
         font-size: nth($tamaño-fuente, 3);
     }
     /**----MQ-ACCESORIOS----**/
-    .accesorios h2 {
+    .accesorios h1 {
         font-size: nth($tamaño-fuente, 3);
         text-align: center;
     }
     /**----MQ-SERVICIOS----**/
+    .nuestros-servicios {
+        font-size: nth($tamaño-fuente, 3);
+        text-align: center;
+    }
     .reparto-agro, .service-vehicular {
         margin: 20px;
     }
@@ -138,7 +146,7 @@
         display: none;
     }
     /**----MQ-CONTACTO----**/
-    .formulario h2 {
+    .formulario h1 {
         font-size: nth($tamaño-fuente, 3);
     }
 }

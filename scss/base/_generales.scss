@@ -52,6 +52,13 @@ a {
     @extend %bg-image-fuel;
 }
 
+.nuestros-servicios {
+    font-size: nth($tamaño-fuente, 4);
+    padding: 15px;
+    margin: 10px;
+}
+
+
 /**----SECCION-CONTACTO----**/
 /*----BOOTSTRAP----*/
 
