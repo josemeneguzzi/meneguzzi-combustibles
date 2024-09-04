@@ -30,7 +30,9 @@ a {
 
 /**----HEADER----**/
 
-.navbar, header, footer {
+.navbar,
+header,
+footer {
     background: rgba(215, 223, 222, 1.0);
     background: linear-gradient(0deg, rgba(215, 223, 222, 1.0), rgba(85, 87, 86, 1.0));
 }
@@ -43,17 +45,32 @@ header {
 header .navbar .container-fluid .navbar-brand .nav-footer-logo {
     padding: 10px;
     margin-right: 50px;
+    transition: transform 0.3s ease;
+}
+
+header .navbar .container-fluid .navbar-brand .nav-footer-logo:hover {
+    transform: scale(1.1);
 }
 
 header .navbar .container-fluid .navbar-collapse .navbar-nav a {
-    color: white;
-    border: 1px solid white;
-    background-color: black;
     padding: 3px 7px 3px 7px;
-    margin-right: 10px;
-    border-radius: 5px;
-    font-weight: bold;
+    margin-right: 15px;
+    font-size: 18px;
     text-align: center;
+}
+
+.custom-hover {
+    position: relative;
+    padding-bottom: 4px;
+    font-weight: 500;
+    border-bottom: 2px solid transparent;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+.custom-hover:hover {
+    color: black;
+    border-bottom: 2px solid black;
+    font-weight: 500;
 }
 
 /**----HOME----**/
@@ -71,7 +88,7 @@ header .navbar .container-fluid .navbar-collapse .navbar-nav a {
     align-items: end;
 }
 
-.hero-subtitle {
+.hero div {
     color: white;
     text-decoration: none;
     border: 1px solid white;
@@ -81,7 +98,7 @@ header .navbar .container-fluid .navbar-collapse .navbar-nav a {
     border-radius: 5px;
 }
 
-.hero .hero-subtitle p {
+.hero div p {
     font-size: 18px;
     margin: 10px;
 }
@@ -115,7 +132,7 @@ header .navbar .container-fluid .navbar-collapse .navbar-nav a {
 .historia {
     display: flex;
     justify-content: center;
-    margin: 70px;;
+    margin: 70px;
 }
 
 .historia img {
@@ -135,28 +152,20 @@ header .navbar .container-fluid .navbar-collapse .navbar-nav a {
     border-radius: 0 5px 5px 0;
 }
 
-.nuestra-empresa div h2, .historia div h2, .m-v-v div h2 {
+.nuestra-empresa div h2,
+.historia div h2,
+.m-v-v div h2 {
     font-size: 60px;
     font-weight: 600;
+    text-align: center;
 }
 
-.nuestra-empresa div p, .historia div p, .m-v-v div p, .valores {
+.nuestra-empresa div p,
+.historia div p,
+.m-v-v div,
+.m-v-v div p {
     font-size: 18px;
     padding: 0 25px;
-}
-
-.mision, .vision, .valores {
-    background-color: whitesmoke;
-    color: black;
-    width: 75%;
-    margin: 25px;
-    padding: 25px;
-    border-radius: 5px;
-    border-top: 25px solid gray
-}
-
-.mision h2, .vision h2, .valores h2 {
-    text-align: center;
 }
 
 .m-v-v {
@@ -165,7 +174,17 @@ header .navbar .container-fluid .navbar-collapse .navbar-nav a {
     margin: 20px;
 }
 
-.valores ul li {
+.m-v-v div {
+    background-color: whitesmoke;
+    color: black;
+    width: 75%;
+    margin: 25px;
+    padding: 25px;
+    border-radius: 5px;
+    border-top: 25px solid gray;
+}
+
+.m-v-v div ul li {
     list-style: none;
 }
 
@@ -180,89 +199,89 @@ header .navbar .container-fluid .navbar-collapse .navbar-nav a {
     padding: 25px;
 }
 
-.fuel-cards {
-    width: 280px;
-    height: 400px;
-    border: 2px solid whitesmoke;
-    text-align: center;
-    display: inline-block;
-    margin: 10px;
-    border-radius: 5px;
-}
-
-.fuel-cards img {
-    width: 100%;
-}
-
-.fuel-cards h3 {
-    margin-top: 30px;
-}
-
-.fuel-types {
+.nuestros-combustibles div {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
-.fuel-description {
+.nuestros-combustibles div a:link,
+:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nuestros-combustibles div a div {
+    width: 280px;
+    height: 400px;
+    border: 2px solid whitesmoke;
+    text-align: center;
+    display: flex;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.nuestros-combustibles div a div {
+    transition: box-shadow 0.3s ease;
+}
+
+.nuestros-combustibles div a div:hover {
+    box-shadow: 3px 3px 10px rgb(255, 255, 255)
+}
+
+.nuestros-combustibles div a div img {
+    width: 100%;
+}
+
+.nuestros-combustibles div a div h3 {
+    margin-top: 30px;
+    font-size: 30px;
+}
+
+.fuel-description div {
     background-color: whitesmoke;
     color: black;
     margin: 70px;
     border-radius: 5px;
 }
 
-.fuel-description h3 {
+.fuel-description div h3 {
     font-size: 60px;
     padding: 30px 30px 3px 30px;
     color: whitesmoke;
-	-webkit-text-stroke: 1px #F8F8F8;
-	text-shadow: 0px 2px 4px black;
-    border-radius: 5px 5px 0 0 ;
+    -webkit-text-stroke: 1px #F8F8F8;
+    text-shadow: 0px 2px 4px black;
+    border-radius: 5px 5px 0 0;
 }
 
-.fuel-description p {
+.fuel-description div p {
     margin-bottom: 0;
+    padding: 30px;
+    font-size: 18px;
 }
 
 #nafta-super {
     background-image: url(../img/nafta-super.png);
     background-size: cover;
-    background-position:bottom;
+    background-position: bottom;
 }
 
 #nafta-premium {
     background-image: url(../img/nafta-premium.png);
     background-size: cover;
-    background-position:bottom;
+    background-position: bottom;
 }
 
 #diesel {
     background-image: url(../img/diesel-comun.png);
     background-size: cover;
-    background-position:bottom;
+    background-position: bottom;
 }
 
 #diesel-premium {
     background-image: url(../img/diesel-premium.png);
     background-size: cover;
-    background-position:bottom;
-}
-
-.fuel-description p {
-    padding: 30px;
-}
-
-.fuel-types a:link, :visited {
-    color: #fff;
-    text-decoration: none;
-}
-
-.fuel-types h3 {
-    font-size: 30px;
-}
-
-.fuel-description p {
-    font-size: 18px;
+    background-position: bottom;
 }
 
 /**----SECCION-ACCESORIOS----**/
@@ -280,7 +299,7 @@ header .navbar .container-fluid .navbar-collapse .navbar-nav a {
     margin: 10px;
 }
 
-.accesorios p span {
+.accesorios p .bold {
     font-weight: bold;
 }
 
@@ -288,7 +307,7 @@ header .navbar .container-fluid .navbar-collapse .navbar-nav a {
     width: 90%;
     margin: 50px auto;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     column-gap: 1rem;
     row-gap: 1rem;
 }
@@ -303,44 +322,51 @@ header .navbar .container-fluid .navbar-collapse .navbar-nav a {
 .grid-item a img {
     width: 100%;
     border-radius: 5px;
+    transition: opacity 0.3s ease; 
 }
 
-.f {
+.grid-item a img:hover {
+    opacity: 0.8;
+}
+
+.item-f {
     grid-column: 1 / 2;
     grid-row: 1 / 3;
-} 
+}
 
-.c {
+.item-c {
     grid-column: 2 / 4;
     grid-row: 1 / 2;
 }
 
-.a {
+.item-a {
     grid-column: 3 / 4;
     grid-row: 3 / 4;
-} 
+}
 
-.e {
+.item-e {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     display: flex;
     align-items: center;
 }
 
-.b {
+.item-b {
     grid-column: 1 / 3;
     grid-row: 3 / 4;
-} 
+}
 
 /**----SECCION-SERVICIOS----**/
 
-.reparto-agro, .service-vehicular {
+.reparto-agro,
+.service-vehicular {
     display: flex;
     padding: 25px;
     margin: 70px;
 }
 
-.reparto-agro div, .service-vehicular div {
+.reparto-agro div,
+.service-vehicular div {
     padding: 25px;
     background-color: whitesmoke;
     color: black;
@@ -362,13 +388,15 @@ header .navbar .container-fluid .navbar-collapse .navbar-nav a {
     border-radius: 0 5px 5px 0;
 }
 
-.reparto-agro div h2, .service-vehicular div h2 {
+.reparto-agro div h2,
+.service-vehicular div h2 {
     font-size: 60px;
     font-weight: 600;
     margin-bottom: 10px;
 }
 
-.reparto-agro p, .service-vehicular p {
+.reparto-agro p,
+.service-vehicular p {
     font-size: 18px;
 }
 
@@ -386,7 +414,7 @@ header .navbar .container-fluid .navbar-collapse .navbar-nav a {
     margin: 10px;
 }
 
-.formulario p span {
+.formulario p .bold {
     font-weight: bold;
 }
 
@@ -410,10 +438,10 @@ header .navbar .container-fluid .navbar-collapse .navbar-nav a {
     margin-bottom: 40px;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
-.form-container .form-boot .input-group span, button.btn.btn-secondary.btn-lg {
+.form-container .form-boot .input-group span,
+button.btn.btn-secondary.btn-lg {
     background-color: rgb(214, 214, 214);
     color: black;
 }
@@ -434,9 +462,15 @@ footer {
     display: flex;
     align-items: center;
     padding: 10px;
+    transition: transform 0.3s ease;
 }
 
-footer .footer-map, footer .social-media-copyright  {
+.footer-logo:hover, .footer-map a img:hover, .social-media-icons a img:hover  {
+    transform: scale(1.1);
+}
+
+footer .footer-map,
+footer .social-media-copyright {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -450,6 +484,7 @@ footer .footer-map, footer .social-media-copyright  {
     width: 40px;
     height: 40px;
     margin-bottom: 10px;
+    transition: transform 0.3s ease;
 }
 
 .social-media-icons {
@@ -461,6 +496,7 @@ footer .footer-map, footer .social-media-copyright  {
     width: 40px;
     height: 40px;
     margin: 0 0 10px 10px;
+    transition: transform 0.3s ease;
 }
 
 .social-media-copyright p {
@@ -470,48 +506,61 @@ footer .footer-map, footer .social-media-copyright  {
 /**----MEDIA-QUERIES----**/
 
 @media screen and (max-width: 1355px) {
+
     /**----MQ-HOME----**/
     .historia {
         flex-direction: column-reverse;
     }
+
     .historia img {
         border-radius: 0 0 5px 5px;
     }
+
     .historia div {
-        border-radius:5px 5px 0 0 ;
+        border-radius: 5px 5px 0 0;
     }
+
     /**----MQ-SERVICIOS----**/
-    .reparto-agro, .service-vehicular {
+    .reparto-agro,
+    .service-vehicular {
         flex-direction: column;
     }
+
     .reparto-agro img {
         border-radius: 5px 5px 0 0;
     }
+
     .reparto-agro div {
         border-radius: 0 0 5px 5px;
     }
+
     .service-vehicular div {
         border-radius: 5px 5px 0 0;
     }
+
     .service-vehicular img {
         border-radius: 0 0 5px 5px;
     }
 }
 
 @media screen and (max-width: 1088px) {
-    /**----MQ-HOME----**/    
+
+    /**----MQ-HOME----**/
     .nuestra-empresa {
         flex-direction: column;
         align-items: center;
     }
+
     .nuestra-empresa div {
         border-radius: 5px 5px 0 0;
         /* width: 600px; */
     }
+
     .nuestra-empresa img {
         width: 100%;
         border-radius: 0 0 5px 5px;
     }
+
     .m-v-v {
         flex-direction: column;
         align-items: center;
@@ -519,24 +568,29 @@ footer .footer-map, footer .social-media-copyright  {
 }
 
 @media screen and (max-width: 992px) {
-    /**----MQ-NAV----**/ 
+
+    /**----MQ-NAV----**/
     .container-fluid {
-    flex-direction: column;
+        flex-direction: column;
     }
+
     .nav-link {
-    margin: 3px;
+        margin: 3px;
     }
+
     .navbar-toggler {
-    margin-bottom: 10px;
+        margin-bottom: 10px;
     }
+
     header .navbar .container-fluid .navbar-brand .nav-footer-logo {
         margin: 0;
     }
 }
 
 @media screen and (max-width: 744px) {
+
     /**----MQ-HOME----**/
-    .hero-subtitle p {
+    .hero div p {
         display: none;
     }
 }
@@ -546,68 +600,93 @@ footer .footer-map, footer .social-media-copyright  {
         column-gap: 0.2rem;
         row-gap: 0.2rem;
     }
+
     /**----MQ-FOOTER----**/
     footer {
         flex-direction: column;
         align-items: center;
     }
+
     /**----MQ-SERVICIOS----**/
-    .reparto-agro div h2, .service-vehicular div h2 {
+    .reparto-agro div h2,
+    .service-vehicular div h2 {
         text-align: center;
     }
 }
 
 @media screen and (max-width: 516px) {
+
     /**----MQ-SERVICIOS----**/
-    .reparto-agro, .service-vehicular {
+    .reparto-agro,
+    .service-vehicular {
         margin: 40px;
     }
-    .reparto-agro div h2, .service-vehicular div h2 {
+
+    .reparto-agro div h2,
+    .service-vehicular div h2 {
         font-size: 40px;
     }
 }
 
 @media screen and (max-width: 450px) {
+
     /**----MQ-HOME----**/
     .nuestra-empresa {
         margin: 40px;
     }
+
     .historia {
         margin: 40px;
     }
-    .mision, .vision, .valores {
+
+    .m-v-v div {
         margin: 40px;
         width: 100%;
     }
-    .nuestra-empresa div, .historia div, .mision, .vision, .valores ul {
+
+    .nuestra-empresa div,
+    .historia div,
+    .m-v-v,
+    .m-v-v div ul {
         padding: 10px;
     }
+
     /**----MQ-COMBUSTIBLES----**/
     .nuestros-combustibles h2 {
         font-size: 40px;
         text-align: center;
     }
-    .fuel-description {
+
+    .fuel-description div {
         margin: 40px;
     }
-    .fuel-description h3 {
-        font-size: 40px ;
+
+    .fuel-description div h3 {
+        font-size: 40px;
     }
+
     /**----MQ-ACCESORIOS----**/
     .accesorios h2 {
         font-size: 40px;
         text-align: center;
     }
+
     /**----MQ-SERVICIOS----**/
-    .reparto-agro, .service-vehicular {
+    .reparto-agro,
+    .service-vehicular {
         margin: 20px;
     }
-    .reparto-agro div, .service-vehicular div {
+
+    .reparto-agro div,
+    .service-vehicular div {
         border-radius: 5px;
     }
-    .reparto-agro img, .service-vehicular img {
+
+    .reparto-agro img,
+    .service-vehicular img {
         display: none;
     }
+
     /**----MQ-CONTACTO----**/
     .formulario h2 {
         font-size: 40px;
@@ -615,26 +694,33 @@ footer .footer-map, footer .social-media-copyright  {
 }
 
 @media screen and (max-width: 420px) {
+
     /**----MQ-HOME----**/
     .nuestra-empresa img {
         display: none;
     }
+
     .nuestra-empresa div {
         border-radius: 5px;
     }
+
     .nuestra-empresa div h2 {
         font-size: 40px;
     }
+
     .historia img {
         display: none;
     }
+
     .historia div {
         border-radius: 5px;
     }
+
     .historia div h2 {
         font-size: 40px;
     }
-    .m-v-v .mision h2, .m-v-v .vision h2, .m-v-v .valores h2 {
+
+    .m-v-v div h2 {
         font-size: 40px;
     }
 }

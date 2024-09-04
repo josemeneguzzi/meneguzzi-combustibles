@@ -1,0 +1,40 @@
+/**----HEADER----**/
+
+.navbar, header {
+    @extend %fondo-nav-footer;
+}
+
+header {
+    @include flex-style(flex, center);
+}
+
+header .navbar .container-fluid .navbar-brand .nav-footer-logo {
+    padding: 10px;
+    margin-right: 50px;
+    @extend %transition-header-footer;
+}
+
+header .navbar .container-fluid .navbar-brand .nav-footer-logo:hover {
+    @extend %transform-header-footer;
+}
+
+header .navbar .container-fluid .navbar-collapse .navbar-nav a {
+    padding: 3px 7px 3px 7px;
+    margin-right: 15px;
+    font-size: nth($tamaño-fuente, 1);
+    text-align: center;
+}
+
+.custom-hover {
+    position: relative;
+    padding-bottom: 4px;
+    font-weight: 500;
+    border-bottom: 2px solid transparent;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+.custom-hover:hover {
+    color: $color-principal;
+    border-bottom: 2px solid $color-principal;
+    font-weight: 500;
+}

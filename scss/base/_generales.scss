@@ -1,0 +1,84 @@
+/**----IMPORTS----**/
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/**----RESET----**/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/**----ALL-PAGES----**/
+
+body {
+    font-family: "Lato", sans-serif;
+    background-color: $color-principal;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 100%;
+    min-height: 100vh
+}
+
+main {
+    color: $color-secundario;
+    background-color: $color-principal;
+}
+
+a {
+    text-decoration: none;
+}
+
+/**----SECCION-COMBUSTIBLES----**/
+
+#nafta-super {
+    background-image: url(../img/nafta-super.png);
+    @extend %bg-image-fuel;
+}
+
+#nafta-premium {
+    background-image: url(../img/nafta-premium.png);
+    @extend %bg-image-fuel;
+}
+
+#diesel {
+    background-image: url(../img/diesel-comun.png);
+    @extend %bg-image-fuel;
+}
+
+#diesel-premium {
+    background-image: url(../img/diesel-premium.png);
+    @extend %bg-image-fuel;
+}
+
+/**----SECCION-CONTACTO----**/
+/*----BOOTSTRAP----*/
+
+.form-container {
+    @include flex-style(flex, center, center);
+    padding: 25px;
+    margin: 30px auto 50px auto;
+}
+
+.form-boot {
+    border: 2px solid $color-secundario;
+    padding: 20px;
+    border-radius: 5px;
+    height: 450px;
+    width: 600px;
+}
+
+.input-group {
+    margin-bottom: 40px;
+    @include flex-style(flex, center);
+}
+
+.form-container .form-boot .input-group span, button.btn.btn-secondary.btn-lg {
+    background-color: rgb(214, 214, 214);
+    color: $color-principal;
+}
+
+button.btn.btn-outline-secondary {
+    font-size: nth($tamaño-fuente, 1);
+}

@@ -1,0 +1,19 @@
+{
+  "name": "proyecto-coder",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "sass --no-source-map --style=expanded scss/estilos.scss css/estilos.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "sass": "^1.77.8"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}

@@ -1,0 +1,181 @@
+//**----VARIABLES----**/
+
+$color-principal: black;
+$color-secundario: whitesmoke;
+
+//**----LISTAS----**/
+
+$tamaño-fuente: 18px, 30px, 40px, 60px;
+
+//**----MIXINS----**/
+
+@mixin flex-style ($display, $justify-content, $align-items: auto) {
+    display: $display;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+
+//**----EXTENDS----**/
+
+//**----HEADER-EXTENDS----**/
+%fondo-nav-footer {
+    background: rgba(215, 223, 222, 1.0);
+    background: linear-gradient(0deg, rgba(215, 223, 222, 1.0), rgba(85, 87, 86, 1.0));
+}
+
+//**----HOME-EXTENDS----**/
+%index-divs {
+        background-color: $color-secundario;
+        color: $color-principal;
+        padding: 20px;
+        @include flex-style(flex, center, center);
+        flex-direction: column;
+}
+
+%mvv-divs {
+    background-color: $color-secundario;
+    color: $color-principal;
+    width: 75%;
+    margin: 25px;
+    padding: 0 25px;
+    border-radius: 5px;
+    border-top: 25px solid gray;
+    font-size: nth($tamaño-fuente, 1);
+}
+
+%index-div-h2 {
+    font-size: nth($tamaño-fuente, 4);
+    font-weight: 600;
+    text-align: center;
+}
+
+%index-div-p {
+    font-size: nth($tamaño-fuente, 1);
+    padding: 0 25px;
+}
+
+//**----COMBUSTIBLES-EXTENDS----**/
+
+%transition-fuels {
+    transition: box-shadow 0.3s ease;
+}
+
+%box-shadow-fuels {
+    box-shadow: 3px 3px 10px rgb(255, 255, 255);
+}
+
+%bg-image-fuel {
+    background-size: cover;
+    background-position: bottom;
+}
+
+%a-link-visited {
+    color: $color-secundario;
+    text-decoration: none;
+}
+
+%fuel-divs {
+    width: 280px;
+    height: 400px;
+    border: 2px solid $color-secundario;
+    text-align: center;
+    display: flex;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+%fuel-div-img {
+    width: 100%;
+}
+
+%fuel-div-h3 {
+    margin-top: 30px;
+    font-size: nth($tamaño-fuente, 2);
+}
+
+%fdescrip-div {
+    background-color: $color-secundario;
+    color: $color-principal;
+    margin: 70px;
+    border-radius: 5px;
+}
+
+%fdescrip-div-h3 {
+    font-size: nth($tamaño-fuente, 4);
+    padding: 30px 30px 3px 30px;
+    color: $color-secundario;
+    -webkit-text-stroke: 1px #F8F8F8;
+    text-shadow: 0px 2px 4px $color-principal;
+    border-radius: 5px 5px 0 0 ;
+}
+
+%fdescrip-div-p {
+    margin-bottom: 0;
+    padding: 30px;
+    font-size: nth($tamaño-fuente, 1);
+}
+
+//**----ACCESORIOS-EXTENDS----**/
+
+%container-items {
+    width: 100%;
+    padding: 5px;
+    @include flex-style(flex, center);
+}
+
+%container-items-img {
+    width: 100%;
+    border-radius: 5px;
+    transition: opacity 0.3s ease; 
+}
+
+%grid-item-opacity {
+    opacity: 0.8;
+}
+
+//**----SERVICIOS-EXTENDS----**/
+
+%serv-sections {
+    display: flex;
+    padding: 25px;
+    margin: 70px;
+}
+
+%serv-sections-divs {
+    padding: 25px;
+    background-color: $color-secundario;
+    color: $color-principal;
+}
+
+%serv-sections-divs-h2 {
+    font-size: nth($tamaño-fuente, 4);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+%footer-map-social-media {
+    @include flex-style(flex, space-evenly, center);
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+    margin: 10px 10px;
+}
+
+%sm-icons-a-img {
+    width: 40px;
+    height: 40px;
+    margin: 0 0 10px 10px;
+}
+
+//**----FOOTER-EXTENDS----**/
+
+%transition-header-footer {
+    transition: transform 0.3s ease;
+}
+
+%transform-header-footer {
+    transform: scale(1.1);
+}
+
+
+
