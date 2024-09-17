@@ -9,13 +9,7 @@ footer {
         &:hover {
             @extend %transform-header-footer;
         }
-        a {
-            img {
-    
-            }
-        }
     }
-    
     .footer-map {
         @extend %footer-map-social-media;
         a {
@@ -28,9 +22,6 @@ footer {
                     @extend %transform-header-footer;
                 }
             }
-        }
-        p {
-    
         }
     }
     

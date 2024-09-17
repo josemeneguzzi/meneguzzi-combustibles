@@ -33,7 +33,7 @@ footer, .navbar, header {
 
 .m-v-v div p, .m-v-v div, .historia div p, .nuestra-empresa div p {
   font-size: 18px;
-  padding: 0 25px;
+  padding: 0 30px;
 }
 
 .nuestros-combustibles div a div {
@@ -103,13 +103,13 @@ footer, .navbar, header {
   align-items: auto;
 }
 
-.accesorios .grid-container .item-f a img, .accesorios .grid-container .item-e a img, .accesorios .grid-container .item-d a img, .accesorios .grid-container .item-c a img, .accesorios .grid-container .item-b a img, .accesorios .grid-container .item-a a img {
+.accesorios .grid-container .item-f img, .accesorios .grid-container .item-e img, .accesorios .grid-container .item-d img, .accesorios .grid-container .item-c img, .accesorios .grid-container .item-b img, .accesorios .grid-container .item-a img {
   width: 100%;
   border-radius: 5px;
   transition: opacity 0.3s ease;
 }
 
-.accesorios .grid-container .item-f a img:hover, .accesorios .grid-container .item-e a img:hover, .accesorios .grid-container .item-d a img:hover, .accesorios .grid-container .item-c a img:hover, .accesorios .grid-container .item-b a img:hover, .accesorios .grid-container .item-a a img:hover {
+.accesorios .grid-container .item-f img:hover, .accesorios .grid-container .item-e img:hover, .accesorios .grid-container .item-d img:hover, .accesorios .grid-container .item-c img:hover, .accesorios .grid-container .item-b img:hover, .accesorios .grid-container .item-a img:hover {
   opacity: 0.8;
 }
 
@@ -206,37 +206,13 @@ a {
 }
 
 /**----SECCION-CONTACTO----**/
-/*----BOOTSTRAP----*/
-.form-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 25px;
-  margin: 30px auto 50px auto;
-}
-
-.form-boot {
-  border: 2px solid whitesmoke;
-  padding: 20px;
-  border-radius: 5px;
-  height: 450px;
-  width: 600px;
-}
-
-.input-group {
-  margin-bottom: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: auto;
-}
-
-.form-container .form-boot .input-group span, button.btn.btn-secondary.btn-lg {
-  background-color: rgb(214, 214, 214);
-  color: black;
-}
-
-button.btn.btn-outline-secondary {
+.form-description, .map-description {
   font-size: 18px;
+}
+
+.form-control:focus {
+  border-color: black;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 2px 4px rgba(255, 255, 255, 0.1);
 }
 
 /**----HEADER----**/
@@ -309,7 +285,7 @@ header .navbar .container-fluid .navbar-collapse .navbar-nav a {
   border-radius: 5px 0 0 5px;
 }
 .nuestra-empresa div h2 {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 .nuestra-empresa img {
   border-radius: 0 5px 5px 0;
@@ -335,7 +311,7 @@ header .navbar .container-fluid .navbar-collapse .navbar-nav a {
   margin: 20px;
 }
 .m-v-v div ul {
-  padding: 0 25px;
+  padding-bottom: 25px;
 }
 .m-v-v div ul li {
   list-style: none;
@@ -426,13 +402,21 @@ header .navbar .container-fluid .navbar-collapse .navbar-nav a {
   padding: 25px;
   margin: 10px;
 }
-.formulario p {
+.formulario .formulario-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.formulario .formulario-container p {
   font-size: 18px;
   padding: 25px;
   margin: 10px;
 }
-.formulario p .bold {
+.formulario .formulario-container p .bold {
   font-weight: bold;
+}
+.formulario .formulario-container div {
+  flex: 1 1 45%;
 }
 
 footer {
@@ -497,7 +481,6 @@ footer .social-media-copyright p {
   }
   .nuestra-empresa div {
     border-radius: 5px 5px 0 0;
-    /* width: 600px; */
   }
   .nuestra-empresa img {
     width: 100%;
@@ -522,14 +505,19 @@ footer .social-media-copyright p {
   header .navbar .container-fluid .navbar-brand .nav-footer-logo {
     margin: 0;
   }
-}
-@media screen and (max-width: 744px) {
   /**----MQ-HOME----**/
+  .hero {
+    background-image: url(../img/hero-img-small.png);
+  }
   .hero div p {
     display: none;
   }
 }
 @media screen and (max-width: 700px) {
+  /**----MQ-HOME----**/
+  .hero {
+    background-position: right;
+  }
   /**----MQ-ACCESORIOS----**/
   .grid-container {
     column-gap: 0.2rem;
@@ -549,6 +537,10 @@ footer .social-media-copyright p {
   }
 }
 @media screen and (max-width: 516px) {
+  /**----MQ-HOME----**/
+  .hero {
+    padding-bottom: 20px;
+  }
   /**----MQ-SERVICIOS----**/
   .reparto-agro, .service-vehicular {
     margin: 40px;
@@ -609,6 +601,12 @@ footer .social-media-copyright p {
 }
 @media screen and (max-width: 420px) {
   /**----MQ-HOME----**/
+  .hero div {
+    padding: 5px;
+  }
+  .hero div h1 {
+    font-size: 25px;
+  }
   .nuestra-empresa img {
     display: none;
   }

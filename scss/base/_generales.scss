@@ -60,32 +60,13 @@ a {
 
 
 /**----SECCION-CONTACTO----**/
-/*----BOOTSTRAP----*/
 
-.form-container {
-    @include flex-style(flex, center, center);
-    padding: 25px;
-    margin: 30px auto 50px auto;
+.form-description, .map-description {
+    font-size: 18px;
 }
 
-.form-boot {
-    border: 2px solid $color-secundario;
-    padding: 20px;
-    border-radius: 5px;
-    height: 450px;
-    width: 600px;
-}
-
-.input-group {
-    margin-bottom: 40px;
-    @include flex-style(flex, center);
-}
-
-.form-container .form-boot .input-group span, button.btn.btn-secondary.btn-lg {
-    background-color: rgb(214, 214, 214);
-    color: $color-principal;
-}
-
-button.btn.btn-outline-secondary {
-    font-size: nth($tamaño-fuente, 1);
+.form-control:focus {
+    border-color: black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2),
+    0 2px 4px rgba(255, 255, 255, 0.1); 
 }

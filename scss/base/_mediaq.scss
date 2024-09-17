@@ -35,7 +35,6 @@
     }
     .nuestra-empresa div {
         border-radius: 5px 5px 0 0;
-        /* width: 600px; */
     }
     .nuestra-empresa img {
         width: 100%;
@@ -61,16 +60,20 @@
     header .navbar .container-fluid .navbar-brand .nav-footer-logo {
         margin: 0;
     }
-}
-
-@media screen and (max-width: 744px) {
     /**----MQ-HOME----**/
+    .hero {
+        background-image: url(../img/hero-img-small.png);
+    }
     .hero div p {
         display: none;
     }
 }
 
 @media screen and (max-width: 700px) {
+    /**----MQ-HOME----**/
+    .hero {
+        background-position: right;
+    }
     /**----MQ-ACCESORIOS----**/
     .grid-container {
         column-gap: 0.2rem;
@@ -91,6 +94,10 @@
 }
 
 @media screen and (max-width: 516px) {
+    /**----MQ-HOME----**/
+    .hero {
+        padding-bottom: 20px;
+    }
     /**----MQ-SERVICIOS----**/
     .reparto-agro, .service-vehicular {
         margin: 40px;
@@ -153,6 +160,12 @@
 
 @media screen and (max-width: 420px) {
     /**----MQ-HOME----**/
+    .hero div {
+        padding: 5px;
+        }
+    .hero div h1 {
+        font-size: 25px;
+        }
     .nuestra-empresa img {
         display: none;
     }

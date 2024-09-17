@@ -17,8 +17,7 @@
         padding: 10px;
         margin: 10px 10px 20px 10px;
         border-radius: 5px;
-        h1{
-        }
+        h1 {}
         p {
             font-size: nth($tamaño-fuente, 1);
             margin: 10px;
@@ -33,7 +32,7 @@
         @extend %index-divs;
         border-radius: 5px 0 0 5px;
         h2 {
-            margin-bottom: 20px;
+            margin-bottom: 30px;
             @extend %index-div-h2;
         }
         p {
@@ -87,7 +86,7 @@
         }
         p {
             @extend %index-div-p;
-        }        
+        }
     }
     div {
         @extend %mvv-divs;
@@ -96,7 +95,7 @@
             @extend %index-div-h2
         }
         ul {
-            padding: 0 25px;
+            padding-bottom: 25px;
             li {
                 list-style: none;
                 .underline {
@@ -104,7 +103,6 @@
                 }
             }
         }
-        
     }
 }
 
@@ -241,20 +239,19 @@
         margin: 10px;
         .bold {
             font-weight: bold;
-        } 
+        }
     }
     .grid-container {
         width: 90%;
         margin: 50px auto;
         display: grid;
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(3, 1fr);
         column-gap: 1rem;
         row-gap: 1rem;
         .item-a {
             @extend %container-items;
             grid-column: 3 / 4;
             grid-row: 3 / 4;
-            a {
                 img {
                     @extend %container-items-img;
                     &:hover {
@@ -262,12 +259,10 @@
                     }
                 }
             }
-        }
         .item-b {
             @extend %container-items;
             grid-column: 1 / 3;
             grid-row: 3 / 4;
-            a {
                 img {
                     @extend %container-items-img;
                     &:hover {
@@ -275,12 +270,10 @@
                     }
                 }
             }
-        }
         .item-c {
             @extend %container-items;
             grid-column: 2 / 4;
             grid-row: 1 / 2;
-            a {
                 img {
                     @extend %container-items-img;
                     &:hover {
@@ -288,10 +281,8 @@
                     }
                 }
             }
-        }
         .item-d {
             @extend %container-items;
-            a {
                 img {
                     @extend %container-items-img;
                     &:hover {
@@ -299,13 +290,11 @@
                     }
                 }
             }
-        }
         .item-e {
             @extend %container-items;
             align-items: center;
             grid-column: 2 / 3;
             grid-row: 2 / 3;
-            a {
                 img {
                     @extend %container-items-img;
                     &:hover {
@@ -313,12 +302,10 @@
                     }
                 }
             }
-        }
         .item-f {
             @extend %container-items;
             grid-column: 1 / 2;
             grid-row: 1 / 3;
-            a {
                 img {
                     @extend %container-items-img;
                     &:hover {
@@ -328,7 +315,7 @@
             }
         }
     }
-}
+
 
 /**----SECCION-SERVICIOS----**/
 
@@ -367,20 +354,26 @@
 }
 
 /**----SECCION-CONTACTO----**/
-
 .formulario {
     h1 {
         font-size: nth($tamaño-fuente, 4);
         padding: 25px;
         margin: 10px;
     }
-    p {
-        font-size: nth($tamaño-fuente, 1);
-        padding: 25px;
-        margin: 10px;
-        .bold {
-            font-weight: bold;
+    .formulario-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p {
+            font-size: nth($tamaño-fuente, 1);
+            padding: 25px;
+            margin: 10px;
+            .bold {
+                font-weight: bold;
+            }
+        }
+        div {
+            flex: 1 1 45%;
         }
     }
 }
-
