@@ -284,76 +284,23 @@ header .navbar .container-fluid .navbar-collapse .navbar-nav a {
     background-position: bottom;
 }
 
-/**----SECCION-ACCESORIOS----**/
+/**----SECCION-TIENDA----**/
 
-.accesorios h2 {
+.tienda h2 {
     font-size: 60px;
     padding: 25px;
     margin: 10px;
 }
 
-.accesorios p {
+.tienda p {
     font-size: 18px;
     padding: 25px;
     text-align: center;
     margin: 10px;
 }
 
-.accesorios p .bold {
+.tienda p .bold {
     font-weight: bold;
-}
-
-.grid-container {
-    width: 90%;
-    margin: 50px auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 1rem;
-    row-gap: 1rem;
-}
-
-.grid-item {
-    width: 100%;
-    padding: 5px;
-    display: flex;
-    justify-content: center;
-}
-
-.grid-item a img {
-    width: 100%;
-    border-radius: 5px;
-    transition: opacity 0.3s ease; 
-}
-
-.grid-item a img:hover {
-    opacity: 0.8;
-}
-
-.item-f {
-    grid-column: 1 / 2;
-    grid-row: 1 / 3;
-}
-
-.item-c {
-    grid-column: 2 / 4;
-    grid-row: 1 / 2;
-}
-
-.item-a {
-    grid-column: 3 / 4;
-    grid-row: 3 / 4;
-}
-
-.item-e {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-    display: flex;
-    align-items: center;
-}
-
-.item-b {
-    grid-column: 1 / 3;
-    grid-row: 3 / 4;
 }
 
 /**----SECCION-SERVICIOS----**/

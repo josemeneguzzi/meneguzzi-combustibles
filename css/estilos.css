@@ -95,24 +95,6 @@ footer, .navbar, header {
   font-size: 18px;
 }
 
-.accesorios .grid-container .item-f, .accesorios .grid-container .item-e, .accesorios .grid-container .item-d, .accesorios .grid-container .item-c, .accesorios .grid-container .item-b, .accesorios .grid-container .item-a {
-  width: 100%;
-  padding: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: auto;
-}
-
-.accesorios .grid-container .item-f img, .accesorios .grid-container .item-e img, .accesorios .grid-container .item-d img, .accesorios .grid-container .item-c img, .accesorios .grid-container .item-b img, .accesorios .grid-container .item-a img {
-  width: 100%;
-  border-radius: 5px;
-  transition: opacity 0.3s ease;
-}
-
-.accesorios .grid-container .item-f img:hover, .accesorios .grid-container .item-e img:hover, .accesorios .grid-container .item-d img:hover, .accesorios .grid-container .item-c img:hover, .accesorios .grid-container .item-b img:hover, .accesorios .grid-container .item-a img:hover {
-  opacity: 0.8;
-}
-
 .service-vehicular, .reparto-agro {
   display: flex;
   padding: 15px;
@@ -203,6 +185,161 @@ a {
   font-size: 60px;
   padding: 15px;
   margin: 10px;
+}
+
+/**----SECCION-TIENDA----**/
+#contenedorProductos {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1rem;
+  margin: 3rem;
+  justify-items: center;
+}
+
+.menuAcciones {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+}
+
+.producto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 310px;
+  margin: 5px;
+  border-radius: 5px;
+  background-color: rgb(202, 202, 202);
+}
+
+.producto .imgContainer {
+  width: 100%;
+  height: auto;
+  max-height: 150px;
+  object-fit: contain;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+}
+
+.producto .imgContainer img {
+  max-width: 100%;
+  height: auto;
+  max-height: 150px;
+  object-fit: contain;
+  padding: 5px;
+  box-sizing: border-box;
+  background-color: rgb(255, 255, 255);
+}
+
+.productoDetalles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.productoDetalles h3 {
+  font-size: 16px;
+  text-align: center;
+  margin: 8px;
+  color: black;
+  font-weight: bold;
+}
+
+.productoDetalles p {
+  font-size: 14px;
+  color: #403c3c;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+#carrito {
+  border: 2px solid white;
+  border-radius: 5px;
+  width: 80%;
+  min-height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.contenedorCarrito {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.tarjetaCarrito {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tarjetaCarrito div {
+  margin-bottom: 5px; /* Espacio entre las secciones */
+}
+
+.productoNombre, .productoPrecio, .productoCantidad, .ProductoSubtotal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.oculta {
+  display: none !important;
+}
+
+.filterContainer {
+  display: flex;
+}
+
+.filterContainer select {
+  margin-right: 8px;
+}
+
+.searchContainer {
+  display: flex;
+}
+
+.searchContainer input {
+  margin-right: 8px;
+}
+
+.carritoAcciones {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.carritoAccionesDerecha {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.carritoAccionesTotal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carritoAccionesTotal p {
+  margin-right: 8px;
 }
 
 /**----SECCION-CONTACTO----**/
@@ -332,49 +469,21 @@ header .navbar .container-fluid .navbar-collapse .navbar-nav a {
   flex-wrap: wrap;
 }
 /**----SECCION-ACCESORIOS----**/
-.accesorios h1 {
+.tienda h1 {
   font-size: 60px;
   padding: 25px;
   margin: 10px;
 }
-.accesorios p {
+.tienda p {
   font-size: 18px;
   padding: 25px;
   text-align: center;
   margin: 10px;
 }
-.accesorios p .bold {
+.tienda p .bold {
   font-weight: bold;
 }
-.accesorios .grid-container {
-  width: 90%;
-  margin: 50px auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 1rem;
-  row-gap: 1rem;
-}
-.accesorios .grid-container .item-a {
-  grid-column: 3/4;
-  grid-row: 3/4;
-}
-.accesorios .grid-container .item-b {
-  grid-column: 1/3;
-  grid-row: 3/4;
-}
-.accesorios .grid-container .item-c {
-  grid-column: 2/4;
-  grid-row: 1/2;
-}
-.accesorios .grid-container .item-e {
-  align-items: center;
-  grid-column: 2/3;
-  grid-row: 2/3;
-}
-.accesorios .grid-container .item-f {
-  grid-column: 1/2;
-  grid-row: 1/3;
-}
+
 /**----SECCION-SERVICIOS----**/
 .reparto-agro img {
   border-radius: 5px 0 0 5px;
