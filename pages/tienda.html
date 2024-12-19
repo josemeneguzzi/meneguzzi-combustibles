@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -13,6 +13,8 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 </head>
 
 <body>
@@ -52,7 +54,7 @@
                 <input id="inputBuscar" placeholder="Búsqueda" type="text" class="form-control">
                 <button id="botonBuscar" class="btn btn-sm btn-light" type="button">Buscar</button>
             </div>
-            <button id="productosCarrito" class="btn btn-sm btn-light" type="button">CARRITO</button>
+            <button id="productosCarrito" class="btn btn-sm btn-light" type="button">Carrito <i class="bi bi-cart-fill"></i></button>
             <div class="filterContainer">
                 <select name="" id="selectPrecio" class="form-select" aria-label="Default select example">
                     <option value="" selected>Ordenar por:</option>
@@ -61,20 +63,20 @@
                 </select>
                 <select name="" id="selectFiltro" class="form-select" aria-label="Default select example">
                     <option value="" selected>Filtrar por:</option>
-                    <option value="">----- MARCA -----</option>
+                    <option value="">> MARCA </option>
                     <option value="marcasTodas">Todas</option>
-                    <option value="3m">3M</option>
-                    <option value="bardahl">Bardahl</option>
-                    <option value="castrol">Castrol</option>
-                    <option value="dps">DPS</option>
-                    <option value="fullRacing">Full Racing</option>
-                    <option value="philips">Philips</option>
-                    <option value="shell">Shell</option>
-                    <option value="slime">Slime</option>
-                    <option value="sundey">Sundey</option>
-                    <option value="wander">Wander</option>
-                    <option value="wd-40">WD-40</option>
-                    <option value="">----- CATEGORÍA -----</option>
+                    <option value="3M">3M</option>
+                    <option value="Bardahl">Bardahl</option>
+                    <option value="Castrol">Castrol</option>
+                    <option value="DPS">DPS</option>
+                    <option value="Full Racing">Full Racing</option>
+                    <option value="Philips">Philips</option>
+                    <option value="Shell">Shell</option>
+                    <option value="Slime">Slime</option>
+                    <option value="Sundey">Sundey</option>
+                    <option value="Wander">Wander</option>
+                    <option value="WD-40">WD-40</option>
+                    <option value="">> CATEGORÍA </option>
                     <option class="selectsCategorias" value="categoriasTodas">Todas</option>
                     <option class="selectsCategorias" value="accesorios">Accesorios</option>
                     <option class="selectsCategorias" value="lubricantes">Lubricantes</option>
@@ -84,7 +86,7 @@
         <div id="contenedorProductos"></div>
         <div class="contenedorCarrito">
             <div class="oculta" id="carrito">
-                <p class="carrito vacio">TU CARRITO ESTA VACÍO</p>
+                <p class="carritoVacio">Tu carrito está vacío<i class="bi bi-emoji-frown-fill"></i></p>
             </div>
             <div class="carritoAcciones oculta">
                 <div class="carritoAccionesIzquierda">
@@ -126,6 +128,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="../js/script.js"></script>
 </body>

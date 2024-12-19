@@ -1,0 +1,182 @@
+[
+    {
+        "id": 1,
+        "nombre": "Aceite Helix 15w40 x 4lts",
+        "marca": "Shell",
+        "categoria": "lubricantes",
+        "stock": 3,
+        "precio": 45500,
+        "rutaImagen": "../img/helix-15w40-4lts.jpg"
+    },
+    {
+        "id": 2,
+        "nombre": "Aceite Helix 15w40 x 1lt",
+        "marca": "Shell",
+        "categoria": "lubricantes",
+        "stock": 8,
+        "precio": 12600,
+        "rutaImagen": "../img/helix-15w40-1lt.jpg"
+    },
+    {
+        "id": 3,
+        "nombre": "Aceite Helix 10w40 x 4lts",
+        "marca": "Shell",
+        "categoria": "lubricantes",
+        "stock": 2,
+        "precio": 50600,
+        "rutaImagen": "../img/helix-10w40-4lts.jpg"
+    },
+    {
+        "id": 4,
+        "nombre": "Aceite Helix 10w40 x 1lt",
+        "marca": "Shell",
+        "categoria": "lubricantes",
+        "stock": 4,
+        "precio": 13300,
+        "rutaImagen": "../img/helix-10w40-1lt.jpg"
+    },
+    {
+        "id": 5,
+        "nombre": "Aceite Helix 5w40 x 4lts",
+        "marca": "Shell",
+        "categoria": "lubricantes",
+        "stock": 1,
+        "precio": 61400,
+        "rutaImagen": "../img/helix-5w40-4lts.jpg"
+    },
+    {
+        "id": 6,
+        "nombre": "Aceite Helix 5w40 x 1lt",
+        "marca": "Shell",
+        "categoria": "lubricantes",
+        "stock": 7,
+        "precio": 16500,
+        "rutaImagen": "../img/helix-5w40-1lt.jpg"
+    },
+    {
+        "id": 7,
+        "nombre": "Kit Reglamentario Vehicular",
+        "marca": "Full Racing",
+        "categoria": "accesorios",
+        "stock": 7,
+        "precio": 53800,
+        "rutaImagen": "../img/kit-reglamentario.jpg"
+    },
+    {
+        "id": 8,
+        "nombre": "Infla y Sella Neumaticos",
+        "marca": "Bardahl",
+        "categoria": "accesorios",
+        "stock": 7,
+        "precio": 7400,
+        "rutaImagen": "../img/inflaysella-bardahl.jpg"
+    },
+    {
+        "id": 9,
+        "nombre": "Llave Saca Filtros",
+        "marca": "Wander",
+        "categoria": "accesorios",
+        "stock": 7,
+        "precio": 12750,
+        "rutaImagen": "../img/llave-saca-filtro.jpg"
+    },
+    {
+        "id": 10,
+        "nombre": "Lampara H4 12v",
+        "marca": "Philips",
+        "categoria": "accesorios",
+        "stock": 7,
+        "precio": 5450,
+        "rutaImagen": "../img/lamp-h4-Philips.jpg"
+    },
+    {
+        "id": 11,
+        "nombre": "Lampara H7 12v",
+        "marca": "Philips",
+        "categoria": "accesorios",
+        "stock": 3,
+        "precio": 11700,
+        "rutaImagen": "../img/lamp-h7-philips.jpg"
+    },
+    {
+        "id": 12,
+        "nombre": "Guante Nitrilo Elastizado",
+        "marca": "DPS",
+        "categoria": "accesorios",
+        "stock": 8,
+        "precio": 3600,
+        "rutaImagen": "../img/guante-dps-nitrilo.jpg"
+    },
+    {
+        "id": 13,
+        "nombre": "Cinta Aisladora 9 mts",
+        "marca": "3M",
+        "categoria": "accesorios",
+        "stock": 2,
+        "precio": 2200,
+        "rutaImagen": "../img/cinta-aisladora-3m.jpg"
+    },
+    {
+        "id": 14,
+        "nombre": "Aceite Actevo 4T 20w50 x1lt",
+        "marca": "Castrol",
+        "categoria": "lubricantes",
+        "stock": 4,
+        "precio": 9500,
+        "rutaImagen": "../img/castrol-actevo-20w50.jpg"
+    },
+    {
+        "id": 15,
+        "nombre": "Aceite Go 2T x 1lt",
+        "marca": "Castrol",
+        "categoria": "lubricantes",
+        "stock": 1,
+        "precio": 8800,
+        "rutaImagen": "../img/castrol-go-2t-1lt.jpg"
+    },
+    {
+        "id": 16,
+        "nombre": "Repara Radiadores",
+        "marca": "Sundey",
+        "categoria": "accesorios",
+        "stock": 7,
+        "precio": 6650,
+        "rutaImagen": "../img/sundey-repara-radiadores.jpg"
+    },
+    {
+        "id": 17,
+        "nombre": "Sellador Pinchaduras",
+        "marca": "Slime",
+        "categoria": "accesorios",
+        "stock": 2,
+        "precio": 22450,
+        "rutaImagen": "../img/slime-pomo.jpg"
+    },
+    {
+        "id": 18,
+        "nombre": "Lubricante Multiuso x 220gr",
+        "marca": "WD-40",
+        "categoria": "lubricantes",
+        "stock": 7,
+        "precio": 8650,
+        "rutaImagen": "../img/wd40-ft-220gr.jpg"
+    },
+    {
+        "id": 19,
+        "nombre": "Lubricante Multiuso x 3,78lts",
+        "marca": "WD-40",
+        "categoria": "lubricantes",
+        "stock": 7,
+        "precio": 42350,
+        "rutaImagen": "../img/wd40-1gallon.jpg"
+    },
+    {
+        "id": 20,
+        "nombre": "Lubricante Multiuso Seco x 226gr",
+        "marca": "WD-40",
+        "categoria": "lubricantes",
+        "stock": 7,
+        "precio": 9700,
+        "rutaImagen": "../img/wd40-lubr-seco.jpg"
+    }
+]
