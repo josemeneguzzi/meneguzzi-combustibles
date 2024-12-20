@@ -87,7 +87,7 @@
         "categoria": "accesorios",
         "stock": 7,
         "precio": 5450,
-        "rutaImagen": "../img/lamp-h4-Philips.jpg"
+        "rutaImagen": "../img/lamp-h4-philips.jpg"
     },
     {
         "id": 11,

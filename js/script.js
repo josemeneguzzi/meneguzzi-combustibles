@@ -48,7 +48,7 @@ function principal(productos) {
                     <h3 class="productoNombre">${producto.nombre}</h3>
                     <p class="productoMarca">${producto.marca}</p>
                     <p class="productoPrecio">$ ${producto.precio.toLocaleString('es-AR')}</p>
-                    <button id="${producto.id}" type="button" class="btn btn-sm btn-light botonAgregarAlCarrito">Agregar al carrito</button>
+                    <button id="${producto.id}" type="button" class="btn btn-sm btn-dark botonAgregarAlCarrito">Agregar al carrito</button>
                 </div>
             `
                 contenedorProductos.appendChild(tarjetaProducto)
